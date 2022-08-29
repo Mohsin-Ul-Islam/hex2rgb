@@ -18,3 +18,7 @@ def hex2rgb(hex_code: str) -> Tuple[int, int, int]:
     green = int(hex_code[2:4], base=16)
 
     return (red, green, blue)
+
+
+def rgb2hex(rgb: Tuple[int, int, int]) -> str:
+    return f"#{hex(rgb[0])}{hex(rgb[1])}{hex(rgb[2])}"
